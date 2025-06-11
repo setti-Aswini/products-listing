@@ -27,6 +27,24 @@
     <img src="${product.image}" alt="${product.name}" />
 
     <div id="productList" class="product-list"></div>
+    <div class="filters">
+  <select id="categoryFilter">
+    <option value="all">All Categories</option>
+    <option value="electronics">Electronics</option>
+    <option value="fashion">Fashion</option>
+    <option value="grocery">Grocery</option>
+  </select>
+
+  <select id="sortFilter">
+    <option value="default">Default</option>
+    <option value="priceAsc">Price: Low to High</option>
+    <option value="priceDesc">Price: High to Low</option>
+    <option value="rating">Rating</option>
+  </select>
+
+  <button id="clearFilters">Clear All Filters</button>
+    </div>
+    
   </div>
 
   <script src="script.js"></script>
